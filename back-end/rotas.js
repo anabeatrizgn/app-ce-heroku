@@ -7,7 +7,7 @@ const rotas = express();
 
 rotas.post("/login", login);
 rotas.post("/cadastro", cadastro);
-rotas.use(autenticacao);
 rotas.get("/", listarFornecedores);
+//rotas.use(autenticacao);
 
 module.exports = rotas;
